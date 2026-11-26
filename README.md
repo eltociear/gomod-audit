@@ -69,7 +69,18 @@ score: process spawning, network, env reads, credential-file references, `Insecu
 
 ## Measured, not guessed
 
-MEASURED_PLACEHOLDER
+Calibrated on the **1,200 top-starred Go modules** and then run once, with frozen rules, on a
+**disjoint held-out set of the next 800**:
+
+| | Calibration (1,152 scanned) | Held-out (735 scanned) |
+| --- | --- | --- |
+| Context-free regex pass, HIGH+ | 59 (5.1%) | 26 (3.5%) |
+| `gomod-audit` HIGH+ | **0** (7 on the first pass, all fixed by context rules) | **0** (blind, single run) |
+
+77% of those modules run `init()` code on import. None shells out with a computed command or sends
+keys or environment from it. 9 inert canaries modelled on real Go incidents (the boltdb-go C2
+typosquat, the 2025 string-array `wget | bash` wave, the 2025 disk wipers, `init()` key exfil)
+all fire CRITICAL.
 
 **Full results: [FINDINGS.md](FINDINGS.md).**
 
