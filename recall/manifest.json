@@ -1,0 +1,451 @@
+{
+ "scanned": "2026-11-27",
+ "note": "Benchmark manifest only. No malware content is stored in this repository.",
+ "artifacts": [
+  {
+   "module": "github.com/agitatedleopa/stm",
+   "version": "v0.0.0-20250310195632-9b44df6faf7b",
+   "sha256_tree": "ab16c73e9aa35e5ad4c4b5b9653bdd7adb4e89bd20ac7d6d93bd2496239b3b23",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/belatedplanet/hypert",
+   "version": "v0.0.0-20250209130104-131fac8c8b5a",
+   "sha256_tree": "82683ab2e25112057be50a32925337acfeb1b83df3ecede2ffde782c04016b5f",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/blankloggia/go-mcp",
+   "version": "v0.0.0-20250410110046-894efeed42d9",
+   "sha256_tree": "f95447026f8fd725090bc738c8114b86b0d25c33e0d194e554d87935ee0b9f80",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/wget-to-wipeout-malicious-go-modules-fetch-destructive-payload",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/boltdb-go/bolt",
+   "version": "v1.3.1",
+   "sha256_tree": "dcbc0d4d884fa0ade96661fd7d16bf0e67113e45876302ecbf3dea573f818046",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/malicious-package-exploits-go-module-proxy-caching-for-persistence",
+   "objective": "Command Execution",
+   "v0.1.0": "SAFE",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "reverse_shell"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/bpoorman/uuid",
+   "version": "v0.0.0-20210527104018-ef6a762dec8e",
+   "sha256_tree": "b5598ea41a64fe032990faf8c250185ec3d00615531848db113ccc9e98ac66da",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/malicious-go-packages-impersonate-googles-uuid-library-and-exfiltrate-data",
+   "objective": "Information Stealing",
+   "v0.1.0": "SAFE",
+   "v0.2.0_frozen": "HIGH",
+   "v0.2.0_ids": [
+    "exfil_host"
+   ],
+   "v0.2.0_final": "HIGH"
+  },
+  {
+   "module": "github.com/briefinitia/gouid",
+   "version": "v0.0.0-20250417000631-be988fd38855",
+   "sha256_tree": "96513a7ea7190e39e1526d6e2592d68f19e5ca0a9a0d54fd348691eef9d21267",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/cavernouskina/mcp-go",
+   "version": "v0.0.0-20250416213458-0672bd636980",
+   "sha256_tree": "c2649959804492c2907469f1cbdc2f46650e0ba0cefe9296098434d22caf6a1d",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/expertsandba/opt",
+   "version": "v0.0.0-20250323175433-944daabf89b7",
+   "sha256_tree": "603c411c3e1b41d6f930317b5e7f4d0384edb81b144e38e9f5fdb672854d64d0",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/illdieanyway/golang-random-ip-ssh-bruteforce",
+   "version": "v0.0.0-20220624110449-9d819518d4fc",
+   "sha256_tree": "4f9f75243e212951659974710a11b0ffa96d60a08e62fa0b877a90c60ff4e748",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/malicious-go-module-disguised-as-ssh-brute-forcer-exfiltrates-credentials",
+   "objective": "Information Stealing",
+   "v0.1.0": "SAFE",
+   "v0.2.0_frozen": "HIGH",
+   "v0.2.0_ids": [
+    "exfil_host"
+   ],
+   "v0.2.0_final": "HIGH"
+  },
+  {
+   "module": "github.com/lastnymph/gouid",
+   "version": "v0.0.0-20250503213614-ce6d3ef58267",
+   "sha256_tree": "053518dea2fb1525ffd9cb0e0d2be91eee41f2525d7aeabf38119b8334e5a548",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/ordinarymea/tnsr_ids",
+   "version": "v0.0.0-20250602014811-e7acc1e89512",
+   "sha256_tree": "40b8d30ba2651785a13053d94b049d08b7f71af7be20c524f0da944b71932494",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "import_shell_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/ornatedoctrin/layout",
+   "version": "v0.0.0-20250130105105-71fb473d00c8",
+   "sha256_tree": "a327e5c46025eb27f4273cdbd50b65e1cc076b2db60186acdbf32a736304c175",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/qiiniu/qmgo",
+   "version": "v1.1.8",
+   "sha256_tree": "d75ea7f01f7b20acd2311ef933d822a40dddbc78fbbbef3f7169802cbc2d06f6",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://about.gitlab.com/blog/gitlab-catches-mongodb-go-module-supply-chain-attack/",
+   "objective": "Command Execution",
+   "v0.1.0": "SAFE",
+   "v0.2.0_frozen": "HIGH",
+   "v0.2.0_ids": [
+    "remote_script_exec"
+   ],
+   "v0.2.0_final": "HIGH"
+  },
+  {
+   "module": "github.com/qiniiu/qmgo",
+   "version": "v1.1.8",
+   "sha256_tree": "3d484618bc491c14cbbc0ebd8d2afdce5f3f5e5b2d5590b33e3c37f15030ef99",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://about.gitlab.com/blog/gitlab-catches-mongodb-go-module-supply-chain-attack/",
+   "objective": "Command Execution",
+   "v0.1.0": "SAFE",
+   "v0.2.0_frozen": "HIGH",
+   "v0.2.0_ids": [
+    "remote_script_exec"
+   ],
+   "v0.2.0_final": "HIGH"
+  },
+  {
+   "module": "github.com/shadowybulk/hypert",
+   "version": "v0.0.0-20250211134936-7505abaf4aee",
+   "sha256_tree": "872510521518efedfdf97b5a4a35adb18dfb51aef6cf61763e1f2acc77799741",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/shallowmulti/hypert",
+   "version": "v0.0.0-20250217232605-b940d904f176",
+   "sha256_tree": "53fe5ac472187c498256722ba16dbe31016dce788410c89cfd6981d1e5e9f4c6",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/sinfulsky/gouid",
+   "version": "v0.0.0-20250504180650-9146b5bfe24f",
+   "sha256_tree": "947293fac0eb2c186382a0b268dea9db66efed1e261451e59b6b3af57c7c9c89",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/steelpoor/tlsproxy",
+   "version": "v0.0.0-20250304082521-29051ed19c60",
+   "sha256_tree": "e863380563e7f6f8b91aa4184cf44394560c6193a00f8b9b1da4e880728f9bbf",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/wget-to-wipeout-malicious-go-modules-fetch-destructive-payload",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/stripedconsu/linker",
+   "version": "v0.0.0-20250227084011-d195c182cc85",
+   "sha256_tree": "e1a3c4fdc0cb132f19885d11b7d17066e79ae38755c2e474cbe1846a2921aebb",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/thankfulmai/hypert",
+   "version": "v0.0.0-20250206230348-e21253554c77",
+   "sha256_tree": "2e091abf1b4c259a2ba50c330be683324176b190b8d68759b8dc6071e46b8cbe",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/truthfulpharm/prototransform",
+   "version": "v0.0.0-20250129021817-f1957e9010e9",
+   "sha256_tree": "26865465d9c45b7c359f5307ae460f52ef2e7823892bccb7c25d359e1a25eb9d",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/wget-to-wipeout-malicious-go-modules-fetch-destructive-payload",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/utilizedsun/layout",
+   "version": "v0.0.0-20250218042507-dd85ddb251cb",
+   "sha256_tree": "41e87573f69b7369465cf8c45f930e0d1110ff84a3b21fd968e4b6637fed2881",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/vainreboot/layout",
+   "version": "v0.0.0-20250214160118-5a7830567709",
+   "sha256_tree": "0d13cc207b2cbf580f66c9cd33313f151910cb08fecfc1bcf92a51d97cb21627",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/weightycine/replika",
+   "version": "v0.0.0-20250503110147-670dceafc55a",
+   "sha256_tree": "542d7d59b3e5f9d206ece39a40fa4ab51a49f2aed7f0c34060217e56fb8152a4",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/wetteepee/hcloud-ip-floater",
+   "version": "v0.0.0-20250224151722-424a3c40b316",
+   "sha256_tree": "9f8ad84964bd82c0e2409c9b691ca0b61ebab4231de97a74d95855399bd97f5c",
+   "split": "tune (first pass = blind vs 0.1.0)",
+   "source": "dannolaius/go-malicious-masters RQ1/prev_packages (module proxy contents captured before the proxy blocked them)",
+   "report": "https://socket.dev/blog/11-malicious-go-packages-distribute-obfuscated-remote-payloads",
+   "objective": "Command Execution",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "download_execute",
+    "obfuscated_exec",
+    "string_array_obfuscation"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  },
+  {
+   "module": "github.com/bpoorman/uid",
+   "version": "e068190dd06be46255980536935a09e7039d39ba",
+   "sha256_tree": "99d26a0971324ffae0fe704eab9c95d49a981637d55e2dd549fb223ecd8010a6",
+   "split": "held-out (after freeze 7b0c7a5)",
+   "source": "Software Heritage snapshot of the removed GitHub repo (2023-05-06 visit)",
+   "report": "Dec 2025 google/uuid typosquat reports",
+   "objective": "",
+   "v0.1.0": "SAFE",
+   "v0.2.0_frozen": "HIGH",
+   "v0.2.0_ids": [
+    "exfil_host"
+   ],
+   "v0.2.0_final": "HIGH"
+  },
+  {
+   "module": "(withheld: still live on GitHub)",
+   "version": "",
+   "sha256_tree": "915be1ad4e481997e10d42ee261aa56a749485a61d95160b3326779f895f920b",
+   "split": "held-out (after freeze 7b0c7a5)",
+   "source": "live GitHub copy of a reported 2025 hypert typosquat",
+   "report": "https://socket.dev/blog/typosquatted-go-packages-deliver-malware-loader",
+   "objective": "",
+   "v0.1.0": "CRITICAL",
+   "v0.2.0_frozen": "CRITICAL",
+   "v0.2.0_ids": [
+    "import_shell_exec"
+   ],
+   "v0.2.0_final": "CRITICAL"
+  }
+ ]
+}

@@ -82,6 +82,11 @@ keys or environment from it. 9 inert canaries modelled on real Go incidents (the
 typosquat, the 2025 string-array `wget | bash` wave, the 2025 disk wipers, `init()` key exfil)
 all fire CRITICAL.
 
+**Recall on real malicious modules ([RECALL.md](RECALL.md)):** 25 reported modules as the proxy
+served them, plus 2 held-out. 0.1.0 (blind) flagged 20 / 25. It missed boltdb-go, both qmgo
+typosquats, bpoorman/uuid and a Telegram-exfil brute-forcer. 0.2.0 flags 25 / 25 (tuned) and 2 / 2
+held-out (small, correlated). Benign HIGH+ on a re-fetched 510: 0 before, 0 after.
+
 **Full results: [FINDINGS.md](FINDINGS.md).**
 
 ## Usage
@@ -104,7 +109,7 @@ Exit code **2** if any target is HIGH or CRITICAL, so it drops straight into CI:
 
 Runs on Python 3.9+ with only the standard library.
 
-Tests: `python3 -m unittest discover -s tests` (9 inert canaries modelled on real Go incidents,
+Tests: `python3 -m unittest discover -s tests` (13 inert canaries modelled on real Go incidents,
 10 benign controls, unit checks). Corpus run: `scripts/bulk_scan.py`.
 
 ## Limitations

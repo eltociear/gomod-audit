@@ -1121,8 +1121,13 @@ def scan_go_file(gf, findings, info, regions, kind, res=None):
             if fm and not gf.string_at(f[2] + fm.start()):
                 e = next((e for e in exec_info if f[2] <= e[0] < f[3] and len(e) > 4), None)
                 if e:
-                    add("HIGH", "remote_script_exec", "Remote Script Execution",
-                        "Fetches a hard-coded URL and runs the computed text with %s -c in the same function" % e[1],
+                    # a command's own `upgrade` / `install` subcommand runs the vendor's installer in the
+                    # user's terminal (package main, stdio wired to os.Std*); a library doing it detached
+                    # from an ordinary API call (qmgo's NewClient -> .Start()) is the attack
+                    interactive = gf.package == "main" or re.search(r"\.Std(?:out|in|err)\s*=\s*os\.Std", body)
+                    add("LOW" if interactive else "HIGH", "remote_script_exec", "Remote Script Execution",
+                        "Fetches a hard-coded URL and runs the computed text with %s -c in the same function%s" % (
+                            e[1], " [interactive installer in a command, not a library]" if interactive else ""),
                         e[0], fm.group(0))
     # dropper: download + chmod +x + exec of a non-literal path, one function
     if has_net and CHMOD_RE.search(text) and exec_info:
